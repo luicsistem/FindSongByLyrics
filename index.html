@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="¿Necesitas un nuevo sitio web? Elaboro experiencias en línea, hermosas y atractivas. Soy Luis Castro, Web Developer.">
+    <title>Find Song by lyrics </title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main id="contenido" class="contenido">
+       <div class="titulo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGAkF5nclD6UzfLB4wpELl7SetK-Fc6K-30Q&usqp=CAU" alt="disco" width="100px" >
+        <h1>SONG LYRICS</h1>
+       </div>
+            <div class="contenedor">
+                    <div id="buscar" class="buscar">
+                            <h2>Song Search</h2>
+
+                            <p>Search by Artist and Name:</p>
+                            <p><span> * </span>Required</p>
+                            <form action="#" id="formulario-buscar">
+                                <div class="input">
+                                    <label for="artista">Artist: <span>*</span></label>
+                                    <input type="text" id="artista" placeholder="Artist">
+                                </div>
+                                <div class="input">
+                                    <label for="cancion">Song: <span>*</span></label>
+                                    <input type="text" id="cancion" placeholder="Song Name">
+                                </div>
+
+                                <div class="input enviar">
+                                    <input type="submit" value="Search">
+                                </div>
+                            </form>
+                    </div>
+                    
+                    <div class="letra-resultado">
+                            <h2></h2>
+                            <div id="resultado"></div>
+                    </div>
+                    <div id="mensajes"></div>
+            </div>
+    </main>
+
+    <script src="js/app.js" type="module"  ></script>
+    
+</body>
+</html>
